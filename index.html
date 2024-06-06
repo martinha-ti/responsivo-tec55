@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        *{margin: 0 auto;}
+        #container{
+            width: 100%;
+        }
+        #um{
+            width: 50%;
+            height: 200px;
+            background-color: #7fff00;
+            float: left;
+        }
+        #dois{
+            width: 50%;
+            height: 200px;
+            background-color: #7fff00;
+            float: left;
+        }
+        @media only screen and (max-width:800px) {
+            #um, #dois{
+                width: 100%;
+                background-color: #ffe02f;
+                border: 1px solid #000;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            #um, #dois{
+                width: 100%;
+                background-color: #2fcbff;
+                border: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="um"><p>Um</p></div>
+        <div id="dois"><p>Dois</p></div>
+    </div>
+</body>
+</html>
